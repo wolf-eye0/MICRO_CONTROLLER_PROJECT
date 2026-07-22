@@ -410,6 +410,24 @@ Claude + ChatGPT
 
 ---
 
+Engineering Design Review
+(Status: Mandatory)
+
+The Engineering Design Review serves as the gate between
+Phase 3A and Phase 3B.
+
+It fixes:
+
+• Engineering Identity
+• Mission
+• Engineering Hypothesis
+• Fixed Design Principles
+• Minimum Demonstrable Success
+
+These become immutable engineering constraints for all later phases.
+
+Future phases shall evaluate implementation approaches without redefining these approved engineering specifications.
+
 # Phase 4 — Idea Synthesis
 
 ## Objective
