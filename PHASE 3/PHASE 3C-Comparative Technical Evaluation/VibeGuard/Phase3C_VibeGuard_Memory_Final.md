@@ -24,7 +24,7 @@ Convert VibeGuard's Phase 3B-validated feasibility into a concrete, evidence-bas
 
 # Inputs
 
-- `vibeguard_sop.md` — governing SOP for this phase
+- `Phase3C_VibeGuard_SOP_Final.md` — governing SOP for this phase
 - `Phase3C_VibeGuard_DeepResearch_Prompt` (Parts 1–4) — commissioning document
 - `Engineering_Design_Review.md` — VibeGuard section (authoritative Engineering Identity/Hypothesis/Fixed Design Principles)
 - `Phase3B_Report_by_Claude.md` and `Phase3B_MEMORY.md` — VibeGuard's Phase 3B feasibility findings
@@ -78,7 +78,7 @@ Convert VibeGuard's Phase 3B-validated feasibility into a concrete, evidence-bas
 
 # Unresolved Questions for Phase 4
 
-1. **Team headcount ambiguity (5 vs. 6).** `vibeguard_sop.md` and the Phase 3C deep research prompt both state "five-member team" but then list role categories (3 CS/Cybersecurity + 1 beginner + 2 hardware/fabrication) that sum to six. This is a documentation inconsistency in the project's own source material, not a research-report error, and should be clarified by the project owner before Phase 4 task allocation is finalized. The recommended architecture and task breakdown work unchanged under either reading.
+1. **Team headcount ambiguity (5 vs. 6).** `Phase3C_VibeGuard_SOP_Final.md` and the Phase 3C deep research prompt both state "five-member team" but then list role categories (3 CS/Cybersecurity + 1 beginner + 2 hardware/fabrication) that sum to six. This is a documentation inconsistency in the project's own source material, not a research-report error, and should be clarified by the project owner before Phase 4 task allocation is finalized. The recommended architecture and task breakdown work unchanged under either reading.
 2. **Final sensor choice (ADXL345 vs. IIS3DWB).** ADXL345 is recommended for the MVP as it comfortably covers the low-frequency fault types (imbalance, misalignment) the MDS's own test scenarios exercise. IIS3DWB remains a documented, affordable (~+₹650–1,050) upgrade path if the team wants bearing-fault-range bandwidth. This is a preference decision, not an open technical question.
 3. **Exact statistical threshold tuning** (number of standard deviations for the Mahalanobis distance cutoff, persistence duration for the RMS threshold) — inherently empirical; to be determined during prototype bring-up (Stage 7 of the bring-up sequence), not before.
 
@@ -87,7 +87,7 @@ Convert VibeGuard's Phase 3B-validated feasibility into a concrete, evidence-bas
 # Methodological Findings Carried Forward
 
 1. **Qwen achieved a full fidelity recovery on VibeGuard this round**, after producing this pipeline's sharpest concept-swap failure on this exact concept in Phase 3B (invented active noise/vibration-cancellation actuator). No exclusion was required for any report in this phase — a first for VibeGuard.
-2. **A team-headcount inconsistency in the project's own source documents (`vibeguard_sop.md`, deep research prompt) was surfaced during this audit** — three role categories described in the SOP sum to six people against a stated five-member team. Recommend correcting at the source before further research commissioning, following the same logic that led Phase 3A's findings to elevate the EDR as the primary grounding document for Phase 3B.
+2. **A team-headcount inconsistency in the project's own source documents (`Phase3C_VibeGuard_SOP_Final.md`, deep research prompt) was surfaced during this audit** — three role categories described in the SOP sum to six people against a stated five-member team. Recommend correcting at the source before further research commissioning, following the same logic that led Phase 3A's findings to elevate the EDR as the primary grounding document for Phase 3B.
 3. **Cost figures across independently-commissioned reports require BOM-completeness normalization before comparison** — Qwen's ~₹1,170 headline figure omits any test-rig/motor cost that both Gemini and Mistral itemize explicitly; the corrected, comparable figure is closer to ₹1,500–1,700.
 4. **The Phase 3B "DSP-vs-ML" disagreement narrowed to a smaller, more tractable disagreement** (single-feature threshold vs. multivariate statistical anomaly detection) rather than resolving to unanimity or requiring further research — consistent with Phase 3B's own prediction that this would be "resolved as an ordinary architecture-selection decision within Phase 3C itself."
 

@@ -25,7 +25,7 @@ When documents conflict, use this precedence:
 
 1. [Engineering Design Review](PHASE%203/Engineering_Design_Review.md)
 2. [Latest Decision Register](Project_mC_Decision_Register_v1.2.md)
-3. [Phase 3C Retained Portfolio Closure Memo](PHASE%203/PHASE%203C-Comparative%20Technical%20Evaluation/Phase3C_Retained_Portfolio_Closure_Memo.md)
+3. [Phase 3C Retained Portfolio Closure Memo](PHASE%203/PHASE%203C-Comparative%20Technical%20Evaluation/Phase3C_Portfolio_Closure_Memo_Approved.md)
 4. Final Phase 3C architecture reports
 5. Phase 3C memories
 6. Phase 3B report and memory
@@ -41,19 +41,19 @@ Raw AI research is evidence, not an authoritative project decision.
 - [Project phase methodology and roadmap](MC_Project_PHASE_DOC.md)
 - [Engineering Design Review](PHASE%203/Engineering_Design_Review.md)
 - [Decision Register v1.2](Project_mC_Decision_Register_v1.2.md)
-- [Phase 3C Retained Portfolio Closure Memo](PHASE%203/PHASE%203C-Comparative%20Technical%20Evaluation/Phase3C_Retained_Portfolio_Closure_Memo.md)
+- [Phase 3C Retained Portfolio Closure Memo](PHASE%203/PHASE%203C-Comparative%20Technical%20Evaluation/Phase3C_Portfolio_Closure_Memo_Approved.md)
 
 ### Final Phase 3C reports
 
-- [OpenBraille final architecture report](PHASE%203/PHASE%203C-Comparative%20Technical%20Evaluation/openbraille/Claudes%20report%20for%20openbraille%20phase%203c.md)
-- [VibeGuard final architecture report](PHASE%203/PHASE%203C-Comparative%20Technical%20Evaluation/vibeguard/Phase3C_VibeGuard_Architecture_Report_By_Claude.md)
-- [TrueMoist final synthesis](PHASE%203/PHASE%203C-Comparative%20Technical%20Evaluation/TrueMoist/Phase3C_TrueMoist_ChatGPT_Final_Synthesis.md)
+- [OpenBraille final architecture report](PHASE%203/PHASE%203C-Comparative%20Technical%20Evaluation/OpenBraille/Phase3C_OpenBraille_Architecture_Report_Final.md)
+- [VibeGuard final architecture report](PHASE%203/PHASE%203C-Comparative%20Technical%20Evaluation/VibeGuard/Phase3C_VibeGuard_Architecture_Report_Final.md)
+- [TrueMoist final synthesis](PHASE%203/PHASE%203C-Comparative%20Technical%20Evaluation/TrueMoist/Phase3C_TrueMoist_Architecture_Report_Final.md)
 
 ### Phase 3C memories
 
-- [OpenBraille Phase 3C memory](PHASE%203/PHASE%203C-Comparative%20Technical%20Evaluation/openbraille/Phase3C_OpenBraille_Memory.md)
-- [VibeGuard Phase 3C memory](PHASE%203/PHASE%203C-Comparative%20Technical%20Evaluation/vibeguard/Phase3C_VibeGuard_Memory.md)
-- [TrueMoist Phase 3C final memory](PHASE%203/PHASE%203C-Comparative%20Technical%20Evaluation/TrueMoist/Phase3C_TrueMoist_MEMORY_Final.md)
+- [OpenBraille Phase 3C memory](PHASE%203/PHASE%203C-Comparative%20Technical%20Evaluation/OpenBraille/Phase3C_OpenBraille_Memory_Final.md)
+- [VibeGuard Phase 3C memory](PHASE%203/PHASE%203C-Comparative%20Technical%20Evaluation/VibeGuard/Phase3C_VibeGuard_Memory_Final.md)
+- [TrueMoist Phase 3C final memory](PHASE%203/PHASE%203C-Comparative%20Technical%20Evaluation/TrueMoist/Phase3C_TrueMoist_Memory_Final.md)
 
 ## Convenience packages
 

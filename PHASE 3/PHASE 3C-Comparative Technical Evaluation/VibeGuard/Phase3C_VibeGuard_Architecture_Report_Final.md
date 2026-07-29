@@ -3,7 +3,7 @@
 ### Project mC — Patent-Oriented Embedded Systems Innovation Pipeline
 
 **Status:** ✅ Complete
-**Evidence base:** Four independent Phase 3C Deep Research reports (Gemini, Mistral, Perplexity, Qwen), audited against `vibeguard_sop.md`, the Engineering Design Review, and the Phase 3B Report/Memory.
+**Evidence base:** Four independent Phase 3C Deep Research reports (Gemini, Mistral, Perplexity, Qwen), audited against `Phase3C_VibeGuard_SOP_Final.md`, the Engineering Design Review, and the Phase 3B Report/Memory.
 **Prepared by:** Claude, acting as CTO / Embedded Systems Architect / IEEE Reviewer / Patent Analyst / VC / Innovation Strategist simultaneously, per this pipeline's established synthesis methodology (Phase 2, 3A, 3B).
 
 ---
@@ -18,7 +18,7 @@ Unlike Phase 3A and 3B, this phase concerns a single concept (VibeGuard) at arch
 
 # TASK 1 — Concept-Fidelity Audit
 
-The authoritative grounding for this audit is `vibeguard_sop.md` §2–§6 and the Engineering Design Review's VibeGuard section, both of which fix VibeGuard as a **passive, single-node, edge-computed detection-and-alerting system** — not signal cancellation, not a multi-sensor array, not a cloud platform.
+The authoritative grounding for this audit is `Phase3C_VibeGuard_SOP_Final.md` §2–§6 and the Engineering Design Review's VibeGuard section, both of which fix VibeGuard as a **passive, single-node, edge-computed detection-and-alerting system** — not signal cancellation, not a multi-sensor array, not a cloud platform.
 
 | Report | Fidelity result |
 |---|---|
@@ -157,7 +157,7 @@ All four estimates — Qwen's once corrected — land well inside the ₹5,000 c
 
 ## 11. Team Feasibility
 
-Three of four reports (Qwen, Perplexity, and Mistral's underlying task list before its own roster error) describe the team as **3 CS/Cybersecurity-strong + 1 beginner programmer + 2 hardware/fabrication members = 6 people**; Gemini describes it as **3 + 1 + 1 = 5**. This is not, on inspection, a fault introduced by any individual report — **the underlying project documents themselves are internally inconsistent on this point.** `vibeguard_sop.md` §6 and the Phase 3C deep research prompt's Team Context both state "five-member student team" and then list three role categories (3 CS/Cybersecurity, 1 beginner, 2 hardware/fabrication) that sum to six. `PROJECT_CONCEPT_CONTEXT.md` states only "five members... three technically strong CS/Cybersecurity students" without resolving the remaining two roles at all.
+Three of four reports (Qwen, Perplexity, and Mistral's underlying task list before its own roster error) describe the team as **3 CS/Cybersecurity-strong + 1 beginner programmer + 2 hardware/fabrication members = 6 people**; Gemini describes it as **3 + 1 + 1 = 5**. This is not, on inspection, a fault introduced by any individual report — **the underlying project documents themselves are internally inconsistent on this point.** `Phase3C_VibeGuard_SOP_Final.md` §6 and the Phase 3C deep research prompt's Team Context both state "five-member student team" and then list three role categories (3 CS/Cybersecurity, 1 beginner, 2 hardware/fabrication) that sum to six. `PROJECT_CONCEPT_CONTEXT.md` states only "five members... three technically strong CS/Cybersecurity students" without resolving the remaining two roles at all.
 
 **This is flagged to Yozo as an open documentation item, not resolved unilaterally by this synthesis** (following the same pattern used for OpenBraille's team-fit strategic fork in Phase 3B): either the "one beginner programmer" is one of "the two hardware-oriented members" (making the real headcount 3 + 2 = 5, with one of the two hardware members also picking up light programming tasks), or the team is genuinely six people and every document undercounts by one. Both readings support the architecture unchanged — the task allocation below assumes 5 and can absorb a 6th member into the hardware/fabrication track without restructuring:
 

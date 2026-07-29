@@ -787,7 +787,7 @@ Support the decision using engineering evidence.
 
 # DOCUMENT 2
 
-## Phase3C_OpenBraille_Memory.md
+## Phase3C_OpenBraille_Memory_Final.md
 
 Produce a concise engineering memory document for future Project mC phases.
 
