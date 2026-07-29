@@ -320,4 +320,4 @@ It is **suitable for implementation by the intended five-member student team**: 
 
 ---
 
-*This report and its companion memory document (`Phase3C_OpenBraille_Memory.md`) constitute the authoritative Phase 3C engineering reference for OpenBraille and take precedence over the four individual Deep Research reports (Gemini, Mistral, Perplexity, Qwen) wherever they differ from the synthesis above.*
+*This report and its companion memory document (`Phase3C_OpenBraille_Memory_Final.md`) constitute the authoritative Phase 3C engineering reference for OpenBraille and take precedence over the four individual Deep Research reports (Gemini, Mistral, Perplexity, Qwen) wherever they differ from the synthesis above.*

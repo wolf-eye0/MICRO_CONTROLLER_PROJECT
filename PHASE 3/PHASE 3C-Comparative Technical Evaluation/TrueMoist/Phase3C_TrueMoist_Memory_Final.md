@@ -3,7 +3,7 @@
 **Version:** 1.0  
 **Status:** Complete  
 **Date:** 27 July 2026  
-**Authoritative companion:** `Phase3C_TrueMoist_ChatGPT_Final_Synthesis.md`
+**Authoritative companion:** `Phase3C_TrueMoist_Architecture_Report_Final.md`
 
 ---
 

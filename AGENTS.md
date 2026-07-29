@@ -45,7 +45,7 @@ Raw AI research is evidence, not an authoritative project decision.
 - MC_Project_PHASE_DOC.md
 - PHASE 3/Engineering_Design_Review.md
 - Project_mC_Decision_Register_v1.2.md
-- PHASE 3/PHASE 3C-Comparative Technical Evaluation/Phase3C_Retained_Portfolio_Closure_Memo.md
+- PHASE 3/PHASE 3C-Comparative Technical Evaluation/Phase3C_Portfolio_Closure_Memo_Approved.md
 
 ## Existing convenience collections
 
@@ -62,7 +62,9 @@ Compare their contents against canonical files before recommending action.
 ## Safety rules
 
 - Never permanently delete project files.
-- Never execute unknown files such as `main`.
+- Never execute unknown or untrusted files.
+- `main/` is currently an empty, untracked directory and must not be
+  treated as an executable file.
 - Never expose or copy credentials.
 - Do not rewrite technical conclusions during file cleanup.
 - Do not merge documents merely because filenames are similar.
@@ -82,8 +84,11 @@ Compare their contents against canonical files before recommending action.
 - The ChatGPT OpenBraille Phase 3C deep-research output is a failed,
   mis-scoped research result. Preserve it as failed research, not as valid
   OpenBraille evidence.
-- The final VibeGuard architecture report currently appears inside its
-  `research/` folder. Audit whether it should be moved to the VibeGuard root.
-- Project_mC_Decision_Register_v1.2.md is newer than the v1.0 saved copy.
+- The authoritative VibeGuard Phase 3C architecture report is:
+  `PHASE 3/PHASE 3C-Comparative Technical Evaluation/VibeGuard/Phase3C_VibeGuard_Architecture_Report_Final.md`.
+  VibeGuard raw independent research remains under `VibeGuard/research/`.
+- `Project_mC_Decision_Register_v1.2.md` is authoritative.
+- `Project_mC_Decision_Register_v1.0_HISTORICAL.md` is retained only for
+  decision-history traceability.
 - Similar Gemini, Mistral, Perplexity and Qwen filenames under different
   concepts are not duplicates merely because their names match.

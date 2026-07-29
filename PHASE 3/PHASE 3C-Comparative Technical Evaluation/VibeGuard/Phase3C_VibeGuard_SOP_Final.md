@@ -486,11 +486,11 @@ The engineering hypothesis cannot reasonably be demonstrated within the project'
 The completed phase should produce:
 
 1. `Phase3C_VibeGuard_SOP.md`
-2. `Phase3C_VibeGuard_DeepResearch_Prompt.md`
+2. `Phase3C_VibeGuard_Deep_Research_Prompt_Final.md`
 3. Independent Deep Research reports
 4. `Phase3C_VibeGuard_Claude_Synthesis_Prompt.md`
 5. `Phase3C_VibeGuard_Architecture_Report.pdf`
-6. `Phase3C_VibeGuard_Memory.md`
+6. `Phase3C_VibeGuard_Memory_Final.md`
 7. Engineering Architecture Review
 8. Final Phase 3C decision
 

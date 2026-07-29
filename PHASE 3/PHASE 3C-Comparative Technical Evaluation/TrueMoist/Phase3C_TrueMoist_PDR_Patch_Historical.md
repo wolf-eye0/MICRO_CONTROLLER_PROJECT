@@ -3,7 +3,7 @@
 **Patch version:** 1.0  
 **Date:** 27 July 2026  
 **Applies to:** `Project_mC_Decision_Register_v1.0(2).md`  
-**Source:** `Phase3C_TrueMoist_ChatGPT_Final_Synthesis.md`
+**Source:** `Phase3C_TrueMoist_Architecture_Report_Final.md`
 
 This patch preserves prior decision history. It updates statuses rather than deleting earlier provisional records.
 

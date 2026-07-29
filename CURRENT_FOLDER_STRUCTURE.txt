@@ -88,43 +88,47 @@
 │   │   ├── Qwen Rsearch on Phase 3B.pdf
 │   │   └── perplexity_research_on_phase3B.md
 │   ├── PHASE 3C-Comparative Technical Evaluation/
-│   │   ├── TrueMoist/
-│   │   │   ├── Research/
-│   │   │   │   ├── TrueMoist  3C Gemini REsearch.docx
-│   │   │   │   ├── TrueMoist Phase 3C  Research By chatgpt.pdf
-│   │   │   │   ├── TrueMoist Phase 3C By Perplexity.md
-│   │   │   │   └── phase-3c-truemoist-Research-Mistral.md
-│   │   │   ├── Phase3C_TrueMoist_ChatGPT_Final_Synthesis.md
-│   │   │   ├── Phase3C_TrueMoist_DeepResearch_Prompt.md
-│   │   │   ├── Phase3C_TrueMoist_Final_Synthesis_Prompt.md
-│   │   │   ├── Phase3C_TrueMoist_MEMORY_Final.md
-│   │   │   ├── Phase3C_TrueMoist_PDR_Update_Patch.md
-│   │   │   └── Phase3C_TrueMoist_SOP.md
-│   │   ├── openbraille/
-│   │   │   ├── Researches/
-│   │   │   │   ├── FAILED_ChatGPT_Generic_Deep_Research_Framework.pdf
-│   │   │   │   ├── Perplexity research on phase 3C.docx
-│   │   │   │   ├── gemini research on phase 3c.docx
-│   │   │   │   ├── mistral research on phase 3c.md
-│   │   │   │   └── qwen Research on phase 3C.md
-│   │   │   ├── Claudes report for openbraille phase 3c.md
-│   │   │   ├── Phase3C_OpenBraille_Claude_Synthesis_Prompt.md
-│   │   │   ├── Phase3C_OpenBraille_DeepResearch_Prompt.md
-│   │   │   ├── Phase3C_OpenBraille_Memory.md
-│   │   │   └── Phase3C_OpenBraille_SOP.md
-│   │   ├── vibeguard/
+│   │   ├── OpenBraille/
+│   │   │   ├── prompts/
+│   │   │   │   ├── Phase3C_OpenBraille_Deep_Research_Prompt_Final.md
+│   │   │   │   └── Phase3C_OpenBraille_Synthesis_Prompt_Claude.md
 │   │   │   ├── research/
-│   │   │   │   ├── Perplexity research on phase 3c.md
-│   │   │   │   ├── gemini research on phase 3c.docx
-│   │   │   │   ├── mistral reserach on phase 3c.md
-│   │   │   │   └── qwens research on phase 3c.md
-│   │   │   ├── Phase3C_VibeGuard_Architecture_Report_By_Claude.md
-│   │   │   ├── Phase3C_VibeGuard_DeepResearch_Prompt.md
-│   │   │   ├── Phase3C_VibeGuard_Memory.md
-│   │   │   ├── claude_synthesis_prompt.md
-│   │   │   ├── claude_synthesis_prompt.mmd
-│   │   │   └── vibeguard_sop.md
-│   │   └── Phase3C_Retained_Portfolio_Closure_Memo.md
+│   │   │   │   ├── Phase3C_OpenBraille_Failed_Research_ChatGPT.pdf
+│   │   │   │   ├── Phase3C_OpenBraille_Raw_Research_Gemini.docx
+│   │   │   │   ├── Phase3C_OpenBraille_Raw_Research_Mistral.md
+│   │   │   │   ├── Phase3C_OpenBraille_Raw_Research_Perplexity.docx
+│   │   │   │   └── Phase3C_OpenBraille_Raw_Research_Qwen.md
+│   │   │   ├── Phase3C_OpenBraille_Architecture_Report_Final.md
+│   │   │   ├── Phase3C_OpenBraille_Memory_Final.md
+│   │   │   └── Phase3C_OpenBraille_SOP_Final.md
+│   │   ├── TrueMoist/
+│   │   │   ├── prompts/
+│   │   │   │   ├── Phase3C_TrueMoist_Deep_Research_Prompt_Final.md
+│   │   │   │   └── Phase3C_TrueMoist_Synthesis_Prompt_Final.md
+│   │   │   ├── research/
+│   │   │   │   ├── Phase3C_TrueMoist_Raw_Research_ChatGPT.pdf
+│   │   │   │   ├── Phase3C_TrueMoist_Raw_Research_Gemini.docx
+│   │   │   │   ├── Phase3C_TrueMoist_Raw_Research_Mistral.md
+│   │   │   │   └── Phase3C_TrueMoist_Raw_Research_Perplexity.md
+│   │   │   ├── Phase3C_TrueMoist_Architecture_Report_Final.md
+│   │   │   ├── Phase3C_TrueMoist_Memory_Final.md
+│   │   │   ├── Phase3C_TrueMoist_PDR_Patch_Historical.md
+│   │   │   └── Phase3C_TrueMoist_SOP_Final.md
+│   │   ├── VibeGuard/
+│   │   │   ├── prompts/
+│   │   │   │   ├── Phase3C_VibeGuard_Deep_Research_Prompt_Final.md
+│   │   │   │   ├── Phase3C_VibeGuard_Synthesis_Prompt_Claude.md
+│   │   │   │   └── Phase3C_VibeGuard_Synthesis_Prompt_Claude.mmd
+│   │   │   ├── research/
+│   │   │   │   ├── Phase3C_VibeGuard_Raw_Research_Gemini.docx
+│   │   │   │   ├── Phase3C_VibeGuard_Raw_Research_Mistral.md
+│   │   │   │   ├── Phase3C_VibeGuard_Raw_Research_Perplexity.md
+│   │   │   │   └── Phase3C_VibeGuard_Raw_Research_Qwen.md
+│   │   │   ├── Phase3C_VibeGuard_Architecture_Report_Final.md
+│   │   │   ├── Phase3C_VibeGuard_Memory_Final.md
+│   │   │   └── Phase3C_VibeGuard_SOP_Final.md
+│   │   ├── Phase3C_Portfolio_Closure_Memo_Approved.md
+│   │   └── README.md
 │   ├── Engineering_Design_Review.md
 │   └── Phase3_DeepResearch_Prompt.md
 ├── every sop and memory/
@@ -142,10 +146,14 @@
 ├── main/
 ├── .gitignore
 ├── AGENTS.md
+├── CLEANUP_DIFF_NAME_STATUS.txt
 ├── CLEANUP_VALIDATION_REPORT.md
 ├── CONTEXT_AND_ZIP_PACKAGES.md
 ├── CURRENT_FOLDER_STRUCTURE.txt
 ├── MC_Project_PHASE_DOC.md
+├── PHASE3C_NAMING_CHANGE_LOG.md
+├── PHASE3C_NAMING_PROPOSAL.md
+├── PHASE3C_NAMING_VALIDATION_REPORT.md
 ├── PROJECT_CONCEPT_CONTEXT.md
 ├── Phase3_SOP.md
 ├── Project_mC_Decision_Register_v1.0_HISTORICAL.md

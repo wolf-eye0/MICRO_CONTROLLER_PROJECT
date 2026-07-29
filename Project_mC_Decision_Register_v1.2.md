@@ -159,7 +159,7 @@
 **Category:** Methodology & Project Management
 **Decision or requirement:** Phase 3C must resolve technical disagreements and select *one* final architecture, rather than preserving forks.
 **Rationale:** Phase 3C's output must serve as an actual, unambiguous build blueprint for Phase 4 prototyping.
-**Source evidence:** `Claudes report for openbraille phase 3c.md`
+**Source evidence:** `Phase3C_OpenBraille_Architecture_Report_Final.md`
 **Alternatives:** Preserving strategic forks into Phase 4.
 **Decision type:** Requirement
 **Verification status:** Verified
@@ -247,7 +247,7 @@
 **Category:** Portfolio & Commercialization & Patent Strategy
 **Decision or requirement:** Retain off-the-shelf commodity sensing hardware for the MVP. Do not develop or claim IP over a custom moisture/temperature/EC probe in Phase 4. Focus innovation work on validated compensation workflow, drift/confidence logic, constrained deployment, and calibration methodology.
 **Rationale:** Protects the schedule and avoids overclaiming a crowded custom-probe hardware area.
-**Source evidence:** `Phase2_Report by CLaude.md`, `Phase3C_TrueMoist_ChatGPT_Final_Synthesis.md`
+**Source evidence:** `Phase2_Report by CLaude.md`, `Phase3C_TrueMoist_Architecture_Report_Final.md`
 **Alternatives:** Designing and patenting a custom integrated probe during the semester MVP.
 **Decision type:** Final MVP scope decision; broader patent strategy remains a recommendation
 **Verification status:** Accepted for MVP scope
@@ -348,7 +348,7 @@
 **Category:** Validation, Testing & Feasibility
 **Decision or requirement:** Use dry-basis gravimetric water content as the authoritative reference. Dry at 105 ± 5 °C for at least 24 hours and until constant mass. Use a 0.01 g scale where available. Do not report volumetric water content unless bulk density or a controlled known-volume measurement is separately established.
 **Rationale:** Removes ambiguity between gravimetric and volumetric water content and strengthens traceability.
-**Source evidence:** `Phase3B_Report_by_Claude.md`, `Claudes report on the research Phases 3a.pdf`, `Phase3C_TrueMoist_ChatGPT_Final_Synthesis.md`
+**Source evidence:** `Phase3B_Report_by_Claude.md`, `Claudes report on the research Phases 3a.pdf`, `Phase3C_TrueMoist_Architecture_Report_Final.md`
 **Alternatives:** Validation against another low-cost electronic sensor; unqualified VWC reporting.
 **Decision type:** Requirement
 **Verification status:** Pending confirmation of institutional oven and scale access
@@ -380,7 +380,7 @@
 **Category:** Concept-Specific Architecture (OpenBraille)
 **Decision or requirement:** Servo + Cam linkage.
 **Rationale:** Retires fabrication-tolerance risk, requires no custom driver electronics (servos self-drive), no continuous-hold thermal fault mode.
-**Source evidence:** `Claudes report for openbraille phase 3c.md`, `Phase3C_OpenBraille_Memory.md`
+**Source evidence:** `Phase3C_OpenBraille_Architecture_Report_Final.md`, `Phase3C_OpenBraille_Memory_Final.md`
 **Alternatives:** Electromagnetic latching micro-coils, non-latching solenoid, Shape Memory Alloy.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -394,7 +394,7 @@
 **Category:** Concept-Specific Architecture (OpenBraille)
 **Decision or requirement:** Adopt a permanent macro-scale (~300% of ISO 17049, ≈7 mm pitch, ≈1.5 mm dot height) for the prototype, explicitly abandoning dimensional compliance.
 **Rationale:** Standard FDM 3D printers cannot achieve the precision required; macro-scaling neutralizes manufacturing risk while proving hypothesis.
-**Source evidence:** `Claudes report for openbraille phase 3c.md`, `Phase3C_OpenBraille_Memory.md`
+**Source evidence:** `Phase3C_OpenBraille_Architecture_Report_Final.md`, `Phase3C_OpenBraille_Memory_Final.md`
 **Alternatives:** 100% scale outsourced SLA printing.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -408,7 +408,7 @@
 **Category:** Concept-Specific Architecture (OpenBraille)
 **Decision or requirement:** ESP32-WROOM-32 DevKit.
 **Rationale:** Offers 30+ GPIO pins (ample for PWM), hardware timers for jitter-free PWM, low cost, and team familiarity.
-**Source evidence:** `Claudes report for openbraille phase 3c.md`, `Phase3C_OpenBraille_Memory.md`
+**Source evidence:** `Phase3C_OpenBraille_Architecture_Report_Final.md`, `Phase3C_OpenBraille_Memory_Final.md`
 **Alternatives:** STM32F103 "Blue Pill", Arduino Uno.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -422,7 +422,7 @@
 **Category:** Concept-Specific Architecture (OpenBraille)
 **Decision or requirement:** Centralized ESP32 control with direct GPIO PWM to each servo; no intermediate driver ICs.
 **Rationale:** SG90 servos integrate their own driver circuitry, eliminating a subsystem and its failure modes entirely.
-**Source evidence:** `Claudes report for openbraille phase 3c.md`, `Phase3C_OpenBraille_Memory.md`
+**Source evidence:** `Phase3C_OpenBraille_Architecture_Report_Final.md`, `Phase3C_OpenBraille_Memory_Final.md`
 **Alternatives:** Shift-register SPI multiplexing, H-Bridge arrays.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -436,7 +436,7 @@
 **Category:** Concept-Specific Architecture (OpenBraille)
 **Decision or requirement:** In-house FDM 3D printing (ABS frame, PETG/Nylon cams) plus off-the-shelf components; no outsourced fabrication.
 **Rationale:** Keeps fabrication within team tools and timeline, avoiding commercial SLA outsourcing dependencies.
-**Source evidence:** `Claudes report for openbraille phase 3c.md`, `Phase3C_OpenBraille_Memory.md`
+**Source evidence:** `Phase3C_OpenBraille_Architecture_Report_Final.md`, `Phase3C_OpenBraille_Memory_Final.md`
 **Alternatives:** Commercial SLA printing, Laser cutting.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -450,7 +450,7 @@
 **Category:** Concept-Specific Architecture (OpenBraille)
 **Decision or requirement:** External 5V/2A DC adapter with a 1000 µF decoupling capacitor across the servo rail.
 **Rationale:** Servos draw high peak current. USB bus power (500mA limit) risks brown-out resets; decoupling eliminates transient voltage sags.
-**Source evidence:** `Claudes report for openbraille phase 3c.md`, `Phase3C_OpenBraille_Memory.md`
+**Source evidence:** `Phase3C_OpenBraille_Architecture_Report_Final.md`, `Phase3C_OpenBraille_Memory_Final.md`
 **Alternatives:** USB bus power, 6V AA Battery pack.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -464,7 +464,7 @@
 **Category:** Concept-Specific Architecture (OpenBraille)
 **Decision or requirement:** Utilize the SG90 servo's integrated torsion spring for pin reset.
 **Rationale:** Removes an external component (compression springs) and a failure mode present in solenoid alternatives.
-**Source evidence:** `Claudes report for openbraille phase 3c.md`
+**Source evidence:** `Phase3C_OpenBraille_Architecture_Report_Final.md`
 **Alternatives:** External compression/leaf springs.
 **Decision type:** Requirement
 **Verification status:** Source verified, technically unvalidated
@@ -479,7 +479,7 @@
 **Category:** Concept-Specific Architecture (OpenBraille)
 **Decision or requirement:** Bottom-up, single-dot-first integration sequence (M1-M8), culminating in tactile validation.
 **Rationale:** Isolates structural friction/mechanical variables from electrical variables before integrating all 6 pins.
-**Source evidence:** `Claudes report for openbraille phase 3c.md`, `Phase3C_OpenBraille_Memory.md`
+**Source evidence:** `Phase3C_OpenBraille_Architecture_Report_Final.md`, `Phase3C_OpenBraille_Memory_Final.md`
 **Alternatives:** Assembling all 6 dots at once.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -494,7 +494,7 @@
 **Category:** Concept-Specific Architecture (VibeGuard)
 **Decision or requirement:** ADXL345 (3-axis digital MEMS accelerometer).
 **Rationale:** Adequate bandwidth (1600 Hz Nyquist) for MVP low-frequency tests; lowest cost; best-documented implementation.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`, `Phase3C_VibeGuard_Memory.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_Final.md`, `Phase3C_VibeGuard_Memory_Final.md`
 **Alternatives:** IIS3DWB, MPU6050, ADXL1002.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -508,7 +508,7 @@
 **Category:** Concept-Specific Architecture (VibeGuard)
 **Decision or requirement:** High-speed SPI Bus (stepped down to 1-2 MHz for breadboards).
 **Rationale:** I2C's 400kHz fast-mode causes buffer overflow at the 3200Hz Output Data Rate needed for maximum bandwidth.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_Final.md`
 **Alternatives:** I2C protocol.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -522,7 +522,7 @@
 **Category:** Concept-Specific Architecture (VibeGuard)
 **Decision or requirement:** ESP32 (WROOM-32 or S3-class).
 **Rationale:** Provides Hardware Floating-Point Unit (FPU) necessary for real-time FFT, 520KB SRAM for windowed buffers, and DMA-capable peripheral bus.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_Final.md`
 **Alternatives:** STM32 F4-class, Arduino Uno, RP2040.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -536,7 +536,7 @@
 **Category:** Concept-Specific Architecture (VibeGuard)
 **Decision or requirement:** Tiered processing: Time-domain features crossing a threshold triggers a windowed FFT; primary classification relies on a calibrated RMS threshold, scaling to unsupervised Mahalanobis-distance anomaly detection.
 **Rationale:** Meets MDS with deterministic thresholds immediately; avoids need for labeled failure datasets required by supervised Deep Learning.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_Final.md`
 **Alternatives:** Supervised Deep-learning TinyML (CNN/Autoencoders).
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -550,7 +550,7 @@
 **Category:** Concept-Specific Architecture (VibeGuard)
 **Decision or requirement:** Baseline spectral subtraction combined with proximity mounting and band-limited features.
 **Rationale:** ESP32 cannot compute complex BSS matrix inversions. The adequacy of spectral subtraction is empirically testable only once a physical rig exists.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_Final.md`
 **Alternatives:** FastICA / SSA / EEMD.
 **Decision type:** Future validation task
 **Verification status:** Partially Verified
@@ -564,7 +564,7 @@
 **Category:** Concept-Specific Architecture (VibeGuard)
 **Decision or requirement:** Absolute rigid mounting (epoxy/cyanoacrylate to a bracket, bolted directly to motor casing).
 **Rationale:** Loose mounting acts as an unintended mechanical low-pass filter, permanently destroying the high-frequency vibration signals.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_Final.md`
 **Alternatives:** Magnetic mounts, foam adhesive.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -578,7 +578,7 @@
 **Category:** Concept-Specific Architecture (VibeGuard)
 **Decision or requirement:** Common-cathode RGB LED (Green = Normal, Red = Abnormal, Blue = Calibrating).
 **Rationale:** Directly satisfies the MDS requirement for "clear output" without imposing complex OLED display code on the MVP.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`, `Phase3C_VibeGuard_Memory.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_Final.md`, `Phase3C_VibeGuard_Memory_Final.md`
 **Alternatives:** OLED/LCD screen.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -592,7 +592,7 @@
 **Category:** Concept-Specific Architecture (VibeGuard)
 **Decision or requirement:** Small 12V DC motor or PC fan mounted on a heavy damped base, tested by artificially attaching an eccentric mass to induce unbalance.
 **Rationale:** Creates a safe, low-voltage, repeatable abnormal condition demonstrating the MDS without needing access to real failing industrial machinery.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`, `Phase3C_VibeGuard_Memory.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_Final.md`, `Phase3C_VibeGuard_Memory_Final.md`
 **Alternatives:** Loosened mounting bolts.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -606,7 +606,7 @@
 **Category:** Concept-Specific Architecture (VibeGuard)
 **Decision or requirement:** Standardize pipeline order: DC removal → Hann Windowing → Time-domain features (RMS/Peak) → Triggered FFT.
 **Rationale:** Controls compute load on constrained MCU; Hann windowing prevents spectral leakage during finite-block FFTs.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`, `Phase3C_VibeGuard_Memory.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_Final.md`, `Phase3C_VibeGuard_Memory_Final.md`
 **Alternatives:** Continuous FFT processing.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -620,7 +620,7 @@
 **Category:** Concept-Specific Architecture (VibeGuard)
 **Decision or requirement:** Document the IIS3DWB (6000 Hz) as the designated upgrade path for bearing-fault detection, while retaining ADXL345 for the MVP.
 **Rationale:** Prevents cost overrun on the MVP while documenting exactly how to restore the advanced capability for future iterations.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`, `Phase3C_VibeGuard_Memory.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_Final.md`, `Phase3C_VibeGuard_Memory_Final.md`
 **Alternatives:** Mandating the IIS3DWB immediately.
 **Decision type:** Recommendation
 **Verification status:** Verified
@@ -635,7 +635,7 @@
 **Category:** Concept-Specific Architecture (TrueMoist)
 **Decision or requirement:** Use a univariate raw calibration as the uncompensated baseline, ordinary multivariate linear regression as the modelling baseline, and ridge-regularized second-order regression as the final MVP candidate. Inputs are raw probe response, measured soil temperature, and controlled salinity-treatment code. Train offline and deploy fixed coefficients for local MCU inference.
 **Rationale:** Preserves interpretability and local processing while modelling low-order interactions without TinyML or online-training risk.
-**Source evidence:** `Phase3B_Report_by_Claude.md`, `Phase3C_TrueMoist_ChatGPT_Final_Synthesis.md`, `Phase3C_TrueMoist_MEMORY_Final.md`
+**Source evidence:** `Phase3B_Report_by_Claude.md`, `Phase3C_TrueMoist_Architecture_Report_Final.md`, `Phase3C_TrueMoist_Memory_Final.md`
 **Alternatives:** Threshold-only mapping, AD5933 impedance architecture, TinyML, on-device adaptive training.
 **Decision type:** Final architecture selection
 **Verification status:** Requires prototype validation
@@ -648,7 +648,7 @@
 **Category:** Concept-Specific Architecture (TrueMoist)
 **Decision or requirement:** Include ADS1115 in the primary prototype and compare it against calibrated ESP32 ADC1 during Week 1. Do not justify it from nominal bit count alone. Retain ADS1115 when it improves pilot noise/RMSE or when its low cost is judged worthwhile for reproducibility; permit calibrated ESP32 ADC1 as fallback.
 **Rationale:** Resolves the Phase 3B instrumentation uncertainty while preserving an evidence-based fallback.
-**Source evidence:** `Phase3B_Report_by_Claude.md`, `Phase3C_TrueMoist_ChatGPT_Final_Synthesis.md`
+**Source evidence:** `Phase3B_Report_by_Claude.md`, `Phase3C_TrueMoist_Architecture_Report_Final.md`
 **Alternatives:** ESP32 ADC1 as the untested final path; higher-cost ADC/impedance instrumentation.
 **Decision type:** Final architecture selection with mandatory validation gate
 **Verification status:** Partially verified; empirical Week-1 gate pending
@@ -661,7 +661,7 @@
 **Category:** Concept-Specific Architecture (TrueMoist)
 **Decision or requirement:** Restrict calibration and formal validation to one homogeneous soil source and one defined preparation method. No multi-soil or universal transfer claim is permitted in the MVP.
 **Rationale:** Makes the physical dataset achievable and prevents soil-type confounding within the two-month schedule.
-**Source evidence:** `Phase3B_Report_by_Claude.md`, `Phase3C_TrueMoist_ChatGPT_Final_Synthesis.md`
+**Source evidence:** `Phase3B_Report_by_Claude.md`, `Phase3C_TrueMoist_Architecture_Report_Final.md`
 **Alternatives:** Multi-soil generalization during the MVP.
 **Decision type:** Final MVP scope decision
 **Verification status:** Accepted
@@ -674,7 +674,7 @@
 **Category:** Concept-Specific Architecture (TrueMoist)
 **Decision or requirement:** Breadboard use is permitted only for Week-1 characterization. Freeze the final analog path on soldered perfboard by the end of Week 2, with short analog wiring, local decoupling, deliberate grounding, and fixed connectors.
 **Rationale:** Reduces avoidable electrical variation before the main dataset is collected.
-**Source evidence:** `Phase3B_Report_by_Claude.md`, `Phase3C_TrueMoist_ChatGPT_Final_Synthesis.md`
+**Source evidence:** `Phase3B_Report_by_Claude.md`, `Phase3C_TrueMoist_Architecture_Report_Final.md`
 **Alternatives:** Keeping the final analog acquisition path on a solderless breadboard.
 **Decision type:** Implementation requirement
 **Verification status:** Pending build
@@ -688,7 +688,7 @@
 **Category:** Concept-Specific Architecture (TrueMoist)
 **Decision or requirement:** Freeze a D-dominant architecture with B-style signal hardening: genuine analog capacitive probe, waterproof DS18B20, controlled salinity treatments, ESP32-WROOM-32, ADS1115, offline-trained fixed regression coefficients, local inference, USB CSV logging, and gravimetric validation.
 **Rationale:** This is the simplest architecture that covers the complete engineering hypothesis within budget and schedule.
-**Source evidence:** `Phase3C_TrueMoist_ChatGPT_Final_Synthesis.md`, `Phase3C_TrueMoist_MEMORY_Final.md`
+**Source evidence:** `Phase3C_TrueMoist_Architecture_Report_Final.md`, `Phase3C_TrueMoist_Memory_Final.md`
 **Alternatives:** Minimal internal-ADC demonstrator; live-EC architecture; adaptive embedded calibration.
 **Decision type:** Final architecture selection
 **Verification status:** Requires mandatory early validation
@@ -702,7 +702,7 @@
 **Category:** Validation, Testing & Feasibility
 **Decision or requirement:** Target 72 independent physical runs: 4 moisture levels × 3 temperature levels × 2 salinity treatments × 3 independent replicates. Rapid ADC readings are averaged and never counted as independent physical samples.
 **Rationale:** Provides factorial coverage while remaining feasible within approximately two months.
-**Source evidence:** `Phase3C_TrueMoist_ChatGPT_Final_Synthesis.md`, `Phase3C_TrueMoist_MEMORY_Final.md`
+**Source evidence:** `Phase3C_TrueMoist_Architecture_Report_Final.md`, `Phase3C_TrueMoist_Memory_Final.md`
 **Alternatives:** 135-run or 180-run designs; ungrouped random splits; counting repeated ADC samples as independent observations.
 **Decision type:** Final validation-plan decision
 **Verification status:** Pilot timing pending
@@ -716,7 +716,7 @@
 **Category:** Validation, Testing & Feasibility
 **Decision or requirement:** On untouched physical test replicates, compensated RMSE must be at least 20% lower and compensated MAE at least 15% lower than the uncompensated baseline. Absolute errors and disturbance-subset results must also be reported.
 **Rationale:** Directly tests relative improvement against the same physical reference rather than relying on training fit or attractive plots.
-**Source evidence:** `Phase3C_TrueMoist_ChatGPT_Final_Synthesis.md`
+**Source evidence:** `Phase3C_TrueMoist_Architecture_Report_Final.md`
 **Alternatives:** R²-only success; arbitrary absolute accuracy claim.
 **Decision type:** Requirement
 **Verification status:** Pending final validation
@@ -730,7 +730,7 @@
 **Category:** Validation, Testing & Feasibility
 **Decision or requirement:** Before the main dataset, verify probe repeatability, insertion and packing sensitivity, ADC-path value, gravimetric access, salinity-treatment effect, and pilot model feasibility. Apply the documented fallback whenever a gate fails.
 **Rationale:** Component existence alone does not prove that the complete measurement and validation chain is viable.
-**Source evidence:** `Phase3C_TrueMoist_ChatGPT_Final_Synthesis.md`, `Phase3C_TrueMoist_MEMORY_Final.md`
+**Source evidence:** `Phase3C_TrueMoist_Architecture_Report_Final.md`, `Phase3C_TrueMoist_Memory_Final.md`
 **Alternatives:** Proceeding directly to full dataset collection.
 **Decision type:** Mandatory validation gate
 **Verification status:** Pending
@@ -744,7 +744,7 @@
 **Category:** Concept-Specific Architecture (TrueMoist)
 **Decision or requirement:** Treat salinity as a controlled experimental treatment expressed by known salt addition per dry soil mass. Do not include mandatory live soil-EC sensing and do not claim that the treatment code is a bulk-soil, pore-water, apparent-EC, or solution-conductivity measurement.
 **Rationale:** Preserves salinity-disturbance validation without creating an underdesigned electrochemical EC instrument.
-**Source evidence:** `Phase3C_TrueMoist_ChatGPT_Final_Synthesis.md`, `Phase3C_TrueMoist_MEMORY_Final.md`
+**Source evidence:** `Phase3C_TrueMoist_Architecture_Report_Final.md`, `Phase3C_TrueMoist_Memory_Final.md`
 **Alternatives:** Direct two-electrode runtime EC; solution-EC proxy as the sole field input.
 **Decision type:** Final architecture selection
 **Verification status:** Salinity pilot pending
@@ -758,7 +758,7 @@
 **Category:** Methodology & Project Management
 **Decision or requirement:** Classify TrueMoist as “Architecture Ready with Mandatory Early Validation.” No Phase 3C research rerun is required; Phase 4 begins with the PDR-061 gates.
 **Rationale:** One coherent architecture exists, but important physical assumptions remain empirical.
-**Source evidence:** `Phase3C_TrueMoist_ChatGPT_Final_Synthesis.md`, `Phase3C_TrueMoist_MEMORY_Final.md`
+**Source evidence:** `Phase3C_TrueMoist_Architecture_Report_Final.md`, `Phase3C_TrueMoist_Memory_Final.md`
 **Alternatives:** Architecture Ready without gates; Conditionally Ready; Phase 3C rerun.
 **Decision type:** Phase-gate decision
 **Verification status:** Accepted
@@ -948,7 +948,7 @@
 **Category:** Administration
 **Decision or requirement:** The team operates as a five-member unit (Three technically capable CS/Cybersecurity members, One beginner/learner, One presenter/support member).
 **Rationale:** Resolves documentation inconsistency across `vibeguard_sop.md` and prompts.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_Final.md`
 **Alternatives:** 6 members.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -962,7 +962,7 @@
 **Category:** Administration
 **Decision or requirement:** Assign the team's beginner programmer highly isolated software modules (e.g., Unicode-to-Braille lookup, LED state machines) early in the schedule.
 **Rationale:** Provides a genuine embedded-systems learning opportunity without placing the critical path or physical integration at risk.
-**Source evidence:** `Claudes report for openbraille phase 3c.md`, `Phase3C_OpenBraille_Claude_Synthesis_Prompt.md`, `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`
+**Source evidence:** `Phase3C_OpenBraille_Architecture_Report_Final.md`, `Phase3C_OpenBraille_Synthesis_Prompt_Claude.md`, `Phase3C_VibeGuard_Architecture_Report_Final.md`
 **Alternatives:** Assigning critical path DSP or mechanical tasks to the beginner.
 **Decision type:** Recommendation
 **Verification status:** Verified
