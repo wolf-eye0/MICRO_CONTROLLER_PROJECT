@@ -494,7 +494,7 @@
 **Category:** Concept-Specific Architecture (VibeGuard)
 **Decision or requirement:** ADXL345 (3-axis digital MEMS accelerometer).
 **Rationale:** Adequate bandwidth (1600 Hz Nyquist) for MVP low-frequency tests; lowest cost; best-documented implementation.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report By Claude.md`, `Phase3C_VibeGuard_Memory.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`, `Phase3C_VibeGuard_Memory.md`
 **Alternatives:** IIS3DWB, MPU6050, ADXL1002.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -508,7 +508,7 @@
 **Category:** Concept-Specific Architecture (VibeGuard)
 **Decision or requirement:** High-speed SPI Bus (stepped down to 1-2 MHz for breadboards).
 **Rationale:** I2C's 400kHz fast-mode causes buffer overflow at the 3200Hz Output Data Rate needed for maximum bandwidth.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report By Claude.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`
 **Alternatives:** I2C protocol.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -522,7 +522,7 @@
 **Category:** Concept-Specific Architecture (VibeGuard)
 **Decision or requirement:** ESP32 (WROOM-32 or S3-class).
 **Rationale:** Provides Hardware Floating-Point Unit (FPU) necessary for real-time FFT, 520KB SRAM for windowed buffers, and DMA-capable peripheral bus.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report By Claude.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`
 **Alternatives:** STM32 F4-class, Arduino Uno, RP2040.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -536,7 +536,7 @@
 **Category:** Concept-Specific Architecture (VibeGuard)
 **Decision or requirement:** Tiered processing: Time-domain features crossing a threshold triggers a windowed FFT; primary classification relies on a calibrated RMS threshold, scaling to unsupervised Mahalanobis-distance anomaly detection.
 **Rationale:** Meets MDS with deterministic thresholds immediately; avoids need for labeled failure datasets required by supervised Deep Learning.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report By Claude.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`
 **Alternatives:** Supervised Deep-learning TinyML (CNN/Autoencoders).
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -550,7 +550,7 @@
 **Category:** Concept-Specific Architecture (VibeGuard)
 **Decision or requirement:** Baseline spectral subtraction combined with proximity mounting and band-limited features.
 **Rationale:** ESP32 cannot compute complex BSS matrix inversions. The adequacy of spectral subtraction is empirically testable only once a physical rig exists.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report By Claude.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`
 **Alternatives:** FastICA / SSA / EEMD.
 **Decision type:** Future validation task
 **Verification status:** Partially Verified
@@ -564,7 +564,7 @@
 **Category:** Concept-Specific Architecture (VibeGuard)
 **Decision or requirement:** Absolute rigid mounting (epoxy/cyanoacrylate to a bracket, bolted directly to motor casing).
 **Rationale:** Loose mounting acts as an unintended mechanical low-pass filter, permanently destroying the high-frequency vibration signals.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report By Claude.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`
 **Alternatives:** Magnetic mounts, foam adhesive.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -578,7 +578,7 @@
 **Category:** Concept-Specific Architecture (VibeGuard)
 **Decision or requirement:** Common-cathode RGB LED (Green = Normal, Red = Abnormal, Blue = Calibrating).
 **Rationale:** Directly satisfies the MDS requirement for "clear output" without imposing complex OLED display code on the MVP.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report By Claude.md`, `Phase3C_VibeGuard_Memory.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`, `Phase3C_VibeGuard_Memory.md`
 **Alternatives:** OLED/LCD screen.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -592,7 +592,7 @@
 **Category:** Concept-Specific Architecture (VibeGuard)
 **Decision or requirement:** Small 12V DC motor or PC fan mounted on a heavy damped base, tested by artificially attaching an eccentric mass to induce unbalance.
 **Rationale:** Creates a safe, low-voltage, repeatable abnormal condition demonstrating the MDS without needing access to real failing industrial machinery.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report By Claude.md`, `Phase3C_VibeGuard_Memory.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`, `Phase3C_VibeGuard_Memory.md`
 **Alternatives:** Loosened mounting bolts.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -606,7 +606,7 @@
 **Category:** Concept-Specific Architecture (VibeGuard)
 **Decision or requirement:** Standardize pipeline order: DC removal → Hann Windowing → Time-domain features (RMS/Peak) → Triggered FFT.
 **Rationale:** Controls compute load on constrained MCU; Hann windowing prevents spectral leakage during finite-block FFTs.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report By Claude.md`, `Phase3C_VibeGuard_Memory.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`, `Phase3C_VibeGuard_Memory.md`
 **Alternatives:** Continuous FFT processing.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -620,7 +620,7 @@
 **Category:** Concept-Specific Architecture (VibeGuard)
 **Decision or requirement:** Document the IIS3DWB (6000 Hz) as the designated upgrade path for bearing-fault detection, while retaining ADXL345 for the MVP.
 **Rationale:** Prevents cost overrun on the MVP while documenting exactly how to restore the advanced capability for future iterations.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report By Claude.md`, `Phase3C_VibeGuard_Memory.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`, `Phase3C_VibeGuard_Memory.md`
 **Alternatives:** Mandating the IIS3DWB immediately.
 **Decision type:** Recommendation
 **Verification status:** Verified
@@ -948,7 +948,7 @@
 **Category:** Administration
 **Decision or requirement:** The team operates as a five-member unit (Three technically capable CS/Cybersecurity members, One beginner/learner, One presenter/support member).
 **Rationale:** Resolves documentation inconsistency across `vibeguard_sop.md` and prompts.
-**Source evidence:** `Phase3C_VibeGuard_Architecture_Report By Claude.md`
+**Source evidence:** `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`
 **Alternatives:** 6 members.
 **Decision type:** Final decision
 **Verification status:** Verified
@@ -962,7 +962,7 @@
 **Category:** Administration
 **Decision or requirement:** Assign the team's beginner programmer highly isolated software modules (e.g., Unicode-to-Braille lookup, LED state machines) early in the schedule.
 **Rationale:** Provides a genuine embedded-systems learning opportunity without placing the critical path or physical integration at risk.
-**Source evidence:** `Claudes report for openbraille phase 3c.md`, `Phase3C_OpenBraille_Claude_Synthesis_Prompt.md`, `Phase3C_VibeGuard_Architecture_Report By Claude.md`
+**Source evidence:** `Claudes report for openbraille phase 3c.md`, `Phase3C_OpenBraille_Claude_Synthesis_Prompt.md`, `Phase3C_VibeGuard_Architecture_Report_By_Claude.md`
 **Alternatives:** Assigning critical path DSP or mechanical tasks to the beginner.
 **Decision type:** Recommendation
 **Verification status:** Verified

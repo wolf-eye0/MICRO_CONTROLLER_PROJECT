@@ -1,3 +1,7 @@
+> HISTORICAL / SUPERSEDED DOCUMENT
+> This register is preserved for decision-history traceability.
+> The current authoritative register is Project_mC_Decision_Register_v1.2.md.
+
 ### Project mC Decision Register — Version 1.0
 
 **Document Control Header**

@@ -13,8 +13,11 @@
 | Phase 1B.5 — Opportunity Portfolio Optimization | ✅ Completed |
 | Phase 1C — Concept Synthesis | ✅ Completed |
 | Phase 2 — Patent Landscape Analysis | ✅ Completed  |
-| Phase 3 — Research Landscape Analysis | ⏳ Pending |
-| Phase 4 — Engineering Feasibility & Prototype Planning | ⏳ Pending |
+| Phase 3A — Engineering Landscape Discovery | ✅ Completed |
+| Phase 3B — Engineering Feasibility Analysis | ✅ Completed |
+| Phase 3C — Comparative Technical Evaluation | ✅ Completed for OpenBraille, VibeGuard and TrueMoist; TrustLatch and ColdTrace deferred before completing Phase 3C |
+| Current project action | Final comparative down-selection among OpenBraille, VibeGuard and TrueMoist |
+| Phase 4 — Engineering Feasibility & Prototype Planning | ⏳ Not started |
 | Phase 5 — Patentability & Commercial Evaluation | ⏳ Pending |
 | Phase 6 — Prototype Engineering | ⏳ Pending |
 | Phase 7 — Prototype Development | ⏳ Pending |
